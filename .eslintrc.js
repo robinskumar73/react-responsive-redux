@@ -1,50 +1,32 @@
+/* eslint-disable quotes */
 module.exports = {
   env: {
     browser: true,
     es6: true,
     node: true,
   },
-  extends: [
-    'airbnb', 'plugin:unicorn/recommended', 'plugin:react/all',
-  ],
-  parser: 'babel-eslint',
+  extends: ["airbnb", "plugin:unicorn/recommended", "plugin:react/all"],
+  parser: "@babel/eslint-parser",
   parserOptions: {
     ecmaVersion: 7,
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
       jsx: true,
     },
-    sourceType: 'module',
+    sourceType: "module",
   },
-  plugins: [
-    'react',
-    'babel',
-    'unicorn',
-    'jest'
-  ],
+  plugins: ["react", "babel", "unicorn", "jest"],
   rules: {
-    indent: [
-      'error',
-      2,
-    ],
-    'linebreak-style': [
-      'error',
-      'unix',
-    ],
-    quotes: [
-      'error',
-      'single',
-    ],
-    semi: [
-      'error',
-      'never',
-    ],
+    indent: ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    quotes: ["error", "single"],
+    semi: ["error", "never"],
     strict: 0,
-    'react/jsx-filename-extension': 0,
-    'react/jsx-no-literals': 0,
-    'import/prefer-default-export': 0,
-    'react/jsx-one-expression-per-line': 0,
-    'react/jsx-props-no-spreading': 0,
-    'unicorn/prevent-abbreviations': 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-no-literals": 0,
+    "import/prefer-default-export": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-props-no-spreading": 0,
+    "unicorn/prevent-abbreviations": 0,
   },
-}
+};
