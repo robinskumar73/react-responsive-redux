@@ -1,6 +1,6 @@
 {
   "name": "next-responsive-redux",
-  "version": "0.10.2",
+  "version": "0.10.5",
   "description": "redux integration for react-responsive",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -9,9 +9,9 @@
     "lib/*",
     "es/*"
   ],
-  "homepage": "https://github.com/modosc/react-responsive-redux",
+  "homepage": "https://github.com/robinskumar73/next-responsive-redux",
   "bugs": {
-    "url": "https://github.com/modosc/react-responsive-redux/issues"
+    "url": "https://github.com/robinskumar73/next-responsive-redux/issues"
   },
   "keywords": [
     "bootstrap",
@@ -30,6 +30,7 @@
     "lint:fix": "eslint --fix src/ test/",
     "clean": "rimraf lib es",
     "build": "npm run clean && npm run lint && npm run test && npm run build:commonjs && npm run build:es",
+    "build:dev": "npm run clean && npm run lint && npm run build:commonjs && npm run build:es",
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib --source-maps",
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir es --source-maps",
     "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
@@ -37,9 +38,9 @@
     "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags"
   },
   "author": {
-    "name": "jonathan schatz",
-    "email": "jon@divisionbyzero.com",
-    "url": "https://github.com/modosc"
+    "name": "Robins Gupta",
+    "email": "robins@snaphy.com",
+    "url": "https://github.com/robinskumar73"
   },
   "license": "MIT",
   "devDependencies": {
@@ -86,7 +87,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/modosc/react-responsive-redux.git"
+    "url": "https://github.com/robinskumar73/next-responsive-redux.git"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
