@@ -1,4 +1,4 @@
-# next-responsive-redux [![npm version](https://badge.fury.io/js/next-responsive-redux.svg)](https://badge.fury.io/js/next-responsive-redux)![Node.js CI](https://github.com/modosc/next-responsive-redux/workflows/Node.js%20CI/badge.svg)
+# next-responsive-redux
 
 ## The Problem
 
